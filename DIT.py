@@ -1,6 +1,6 @@
 import random
 play = "y"
-while play == "y":
+while play in ("y", "yes", "start", "play", "continue"):
     user = input("Rock Paper Scissors: ").lower()
     com = random.choice(["rock", "paper", "scissors"])
     if com == user:
@@ -29,5 +29,5 @@ while play == "y":
     play = input("Play again?(Y/N): ").lower()
 
 
-    if play == "n":
+    if play in ("n", "no", "exit", "quit", "stop", "shut off"):
         print("Shut off")

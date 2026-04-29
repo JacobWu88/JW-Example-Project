@@ -1,5 +1,6 @@
 import random
 play = "y"
+print("Ver 1.0")
 while play in ("y", "yes", "start", "play", "continue"):
     user = input("Rock Paper Scissors: ").lower()
     com = random.choice(["rock", "paper", "scissors"])
